@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12.0pt;
+    width: 400px;
+    padding: 10px;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+ol,
+ul,
+li {
+    line-height: 1.2; /* Abstand jeder Zeile */
+    margin-bottom: 1.3em; /* Abstand zum nächsten <li> Eintrag */
+}
+
