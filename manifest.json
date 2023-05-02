@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Website Summary",
     "version": "1.0",
-    "description": "Generate a 5 bullet point summary of the current website using OpenAI's Davinci model.",
+    "description": "AI generated 5 bullet point summary of the current website using OpenAI's Davinci model",
     "action": {
         "default_popup": "popup.html",
         "default_icon": "icon.png"

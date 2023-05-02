@@ -1,8 +1,12 @@
+alert("klsdjfdslkfsldkf");
+const x = prompt("Hello world");
+
+
 async function getApiKey() {
     return new Promise((resolve) => {
         chrome.storage.sync.get("apiKey", (data) => {
             if (chrome.runtime.lastError || !data.apiKey) {
-                const apiKey = prompt("Please enter your OpenAI API key:");
+                const apiKey = prompt('Please enter your OpenAI API key:\nplatform.openai.com/account/api-keys');
                 if (apiKey) {
                     chrome.storage.sync.set({ apiKey }, () => {
                         resolve(apiKey);
@@ -19,7 +23,7 @@ async function getApiKey() {
 
 async function getSummary(url, apiKey) {
     const prompt = `Generate a 5 sentences  summary with important words emphasized with the html b tag for the website: "${url}" and return it as a JSON array  with each sentence as one entry. The key should be "points"`;
-
+    
     // return [prompt];
 
     const response = await fetch("https://api.openai.com/v1/completions", {
